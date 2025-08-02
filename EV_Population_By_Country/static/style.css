@@ -1,0 +1,60 @@
+/* Center the entire form vertically and horizontally */
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff9d6; /* light yellow background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Main container styling */
+.container {
+  background-color: white;
+  padding: 40px 50px;
+  border-radius: 16px;
+  box-shadow: 0 6px 30px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+/* Labels */
+label {
+  font-size: 20px;
+  color: #1a1a1a;
+}
+
+/* Input and select fields */
+input[type="number"],
+select {
+  width: 300px;
+  padding: 12px;
+  font-size: 18px;
+  margin: 10px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+
+/* Submit button */
+button {
+  margin-top: 20px;
+  padding: 12px 25px;
+  font-size: 18px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+/* Button hover effect */
+button:hover {
+  background-color: #0056b3;
+}

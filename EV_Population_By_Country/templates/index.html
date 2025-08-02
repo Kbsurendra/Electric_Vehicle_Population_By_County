@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>EV Predictor</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>🔋 Electric Vehicle Adoption Predictor</h1>
+    <form action="/predict" method="POST">
+      <label for="county">Select County:</label>
+      <select name="county" id="county" required>
+        {% for county in counties %}
+          <option value="{{ county }}">{{ county }}</option>
+        {% endfor %}
+      </select>
+
+      <label for="total_vehicles">Enter Total Vehicles:</label>
+      <input type="number" name="total_vehicles" id="total_vehicles" required min="1">
+
+      <button type="submit">Predict</button>
+    </form>
+  </div>
+</body>
+</html>

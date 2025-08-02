@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Prediction Result</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h2>✅ County: {{ county }}</h2>
+    <p>📈 Predicted EV Total: {{ ev_total_pred }}</p>
+    <p>🔮 Predicted EV %: {{ ev_percent_pred }}%</p>
+
+    {% if is_low %}
+      <p class="warning">⚠️ EV adoption prediction is very low.</p>
+    {% endif %}
+    <a href="/">⬅ Back</a>
+  </div>
+</body>
+</html>
